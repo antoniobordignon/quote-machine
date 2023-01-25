@@ -32,14 +32,14 @@ export function NewQuote(){
         <div className="text-white">
             <h1>
                 {getQuote.length === 0 ? (<p>Loading...</p>) : (
-                        <div id="quote">
-                            <h2 className="font-bold italic m-7">
-                                "{getQuote.text}"
-                            </h2>
-                            <span className="m-1">
-                                ({getQuote.author})
-                            </span>
-                        </div>
+                    <div id="quote">
+                        <h2 className="font-bold italic m-7">
+                            "{getQuote.text}"
+                        </h2>
+                        <span className="m-1">
+                            ({getQuote.author})
+                        </span>
+                    </div>
                 )}
             </h1>
         </div>
