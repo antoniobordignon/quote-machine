@@ -37,7 +37,7 @@ export function NewQuote(){
                             "{getQuote.text}"
                         </h2>
                         <span className="m-1">
-                            ({getQuote.author})
+                            ({getQuote.author ? getQuote.author : "unknown"})
                         </span>
                     </div>
                 )}
