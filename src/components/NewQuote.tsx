@@ -33,11 +33,11 @@ export function NewQuote(){
             <h1>
                 {getQuote.length === 0 ? (<p>Loading...</p>) : (
                         <div id="quote">
-                            <h2>
-                                {getQuote.text}
+                            <h2 className="font-bold italic m-7">
+                                "{getQuote.text}"
                             </h2>
-                            <span>
-                                {getQuote.author}
+                            <span className="m-1">
+                                ({getQuote.author})
                             </span>
                         </div>
                 )}
