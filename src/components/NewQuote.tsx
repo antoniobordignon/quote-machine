@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const url = axios.create({
-    baseURL: "https://type.fit/api/quotes"
-})
+interface NewQuoteProps {
+        text: string,
+        author: string,
+        length: number
+  }
 
 export function NewQuote(){
-    const [getQuote, setGetQuote] = useState([]) 
+    const [getQuote, setGetQuote] = useState<NewQuoteProps>(Object) 
 
     const getPosts = async() => {
         
